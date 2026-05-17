@@ -77,7 +77,7 @@ GalleryScreen refreshes grid, shows "uploaded" badge
 ## Package Structure
 
 ```
-com.photobackup.app
+com.hriyaan.photostorage
 ├── data
 │   ├── UploadDao.kt              # SQLite CRUD
 │   ├── UploadDatabase.kt         # Room or raw SQLite helper

@@ -2,6 +2,12 @@
 
 A space for ideation, planning, and technical design for a direct-to-cloud photo backup app.
 
+## Implementation
+
+App code: **[BYOYPhotoStorage/PhotoStorageAndroidApp](https://github.com/BYOYPhotoStorage/PhotoStorageAndroidApp)**
+
+Current build/distribution status: see [`STATUS.md`](./STATUS.md).
+
 ## Folder Structure
 
 - **ideas/** — Brainstorming, feature ideas, user flows, rough concepts

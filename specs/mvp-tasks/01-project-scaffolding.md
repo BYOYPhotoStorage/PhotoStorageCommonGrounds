@@ -14,8 +14,8 @@ Create the Android project skeleton so that tasks 02–08 can compile their code
 - `gradle/libs.versions.toml` (optional version catalog)
 - `app/build.gradle.kts`
 - `app/src/main/AndroidManifest.xml`
-- `app/src/main/java/com/photobackup/app/PhotoBackupApp.kt` (skeleton — Task 09 will populate singletons)
-- `app/src/main/java/com/photobackup/app/MainActivity.kt` (placeholder — Task 09 replaces logic)
+- `app/src/main/java/com/hriyaan/photostorage/PhotoBackupApp.kt` (skeleton — Task 09 will populate singletons)
+- `app/src/main/java/com/hriyaan/photostorage/MainActivity.kt` (placeholder — Task 09 replaces logic)
 - `app/src/main/res/values/strings.xml` (with `app_name`)
 - `app/src/main/res/values/themes.xml` (Material3 default)
 - `app/src/main/res/mipmap-*` launcher icon (default `ic_launcher`)
@@ -28,7 +28,7 @@ Create the Android project skeleton so that tasks 02–08 can compile their code
 - Kotlin DSL throughout.
 - AGP 8.5+, Kotlin 1.9.x or 2.0.x, JDK 17.
 - `compileSdk = 34`, `minSdk = 33`, `targetSdk = 34`.
-- `applicationId = "com.photobackup.app"`.
+- `applicationId = "com.hriyaan.photostorage"`.
 - Enable `viewBinding = true`.
 - Use the dependency block from [`../../architecture/mvp-architecture.md`](../../architecture/mvp-architecture.md):
 
@@ -74,7 +74,7 @@ Create the Android project skeleton so that tasks 02–08 can compile their code
 ### `PhotoBackupApp.kt`
 
 ```kotlin
-package com.photobackup.app
+package com.hriyaan.photostorage
 
 import android.app.Application
 
@@ -91,7 +91,7 @@ class PhotoBackupApp : Application() {
 ### `MainActivity.kt` (placeholder only)
 
 ```kotlin
-package com.photobackup.app
+package com.hriyaan.photostorage
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
@@ -110,15 +110,15 @@ class MainActivity : AppCompatActivity() {
 Create empty classes so the `AndroidManifest` references resolve. Tasks 07 and 08 will replace them.
 
 ```kotlin
-// app/src/main/java/com/photobackup/app/ui/OnboardingActivity.kt
-package com.photobackup.app.ui
+// app/src/main/java/com/hriyaan/photostorage/ui/OnboardingActivity.kt
+package com.hriyaan.photostorage.ui
 import androidx.appcompat.app.AppCompatActivity
 class OnboardingActivity : AppCompatActivity()
 ```
 
 ```kotlin
-// app/src/main/java/com/photobackup/app/ui/GalleryActivity.kt
-package com.photobackup.app.ui
+// app/src/main/java/com/hriyaan/photostorage/ui/GalleryActivity.kt
+package com.hriyaan.photostorage.ui
 import androidx.appcompat.app.AppCompatActivity
 class GalleryActivity : AppCompatActivity()
 ```
@@ -130,7 +130,7 @@ class GalleryActivity : AppCompatActivity()
 Create empty `.gitkeep` files (or just an empty Kotlin file) inside each package directory so Tasks 02–06 can drop their files in:
 
 ```
-app/src/main/java/com/photobackup/app/
+app/src/main/java/com/hriyaan/photostorage/
 ├── b2/
 ├── data/
 ├── thumbnail/

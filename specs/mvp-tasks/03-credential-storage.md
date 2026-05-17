@@ -8,13 +8,13 @@ Securely persist the user's B2 credentials on device using `EncryptedSharedPrefe
 
 ## Files you own
 
-- `app/src/main/java/com/photobackup/app/data/PrefsStore.kt`
-- (Optional) `app/src/test/java/com/photobackup/app/data/PrefsStoreTest.kt`
+- `app/src/main/java/com/hriyaan/photostorage/data/PrefsStore.kt`
+- (Optional) `app/src/test/java/com/hriyaan/photostorage/data/PrefsStoreTest.kt`
 
 ## Public contract
 
 ```kotlin
-package com.photobackup.app.data
+package com.hriyaan.photostorage.data
 
 data class B2Credentials(
     val keyId: String,
@@ -62,7 +62,7 @@ Keys: `key_id`, `application_key`, `bucket_name`.
 
 - [ ] After `saveCredentials(creds)` and process restart (simulated by creating a new `PrefsStore` instance with the same context), `getCredentials()` returns the same `B2Credentials`.
 - [ ] After `clearCredentials()`, `hasCredentials()` is false and `getCredentials()` is null.
-- [ ] Inspecting the on-device file at `/data/data/com.photobackup.app/shared_prefs/b2_credentials.xml` shows encrypted blobs, not plaintext keys.
+- [ ] Inspecting the on-device file at `/data/data/com.hriyaan.photostorage/shared_prefs/b2_credentials.xml` shows encrypted blobs, not plaintext keys.
 - [ ] No reference to `applicationKey` appears in any `Log.*` call.
 
 ## Out of scope

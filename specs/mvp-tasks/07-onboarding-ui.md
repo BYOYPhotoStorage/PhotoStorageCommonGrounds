@@ -8,7 +8,7 @@ A single-screen credential entry form. On "Connect", validate against B2 and per
 
 ## Files you own
 
-- `app/src/main/java/com/photobackup/app/ui/OnboardingActivity.kt` (overwrites the stub from Task 01)
+- `app/src/main/java/com/hriyaan/photostorage/ui/OnboardingActivity.kt` (overwrites the stub from Task 01)
 - `app/src/main/res/layout/activity_onboarding.xml`
 - Any Material/string resources you need (strings should land in `res/values/strings.xml` — Task 01 created the file; just append).
 

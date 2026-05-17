@@ -72,7 +72,7 @@ Upload data flow: tap → `ThumbnailGen.createWebPThumbnail` → `S3Uploader` (p
 ## Project conventions
 
 - **Language:** Kotlin only.
-- **Package root:** `com.photobackup.app`.
+- **Package root:** `com.hriyaan.photostorage`.
 - **Gradle DSL:** Kotlin DSL (`build.gradle.kts`).
 - **Min SDK:** 33. **Target/compile SDK:** 34.
 - **Coroutines:** All I/O (DB, network, bitmap) runs on `Dispatchers.IO`. UI uses `Dispatchers.Main` / `lifecycleScope`.
@@ -221,15 +221,15 @@ So that two agents never write to the same file:
 |------|-------|
 | `app/build.gradle.kts`, `build.gradle.kts`, `settings.gradle.kts`, `gradle.properties` | Task 01 |
 | `app/src/main/AndroidManifest.xml` | Task 01 (creates), Task 09 (may update entry activity) |
-| `app/src/main/java/com/photobackup/app/PhotoBackupApp.kt` | Task 01 (skeleton), Task 09 (singleton wiring) |
-| `app/src/main/java/com/photobackup/app/MainActivity.kt` | Task 09 |
-| `app/src/main/java/com/photobackup/app/data/UploadRecord.kt`, `UploadDao.kt`, `UploadDatabase.kt` | Task 02 |
-| `app/src/main/java/com/photobackup/app/data/PrefsStore.kt` | Task 03 |
-| `app/src/main/java/com/photobackup/app/data/MediaStoreQuery.kt`, `PhotoPermission.kt` | Task 04 |
-| `app/src/main/java/com/photobackup/app/thumbnail/ThumbnailGen.kt` | Task 05 |
-| `app/src/main/java/com/photobackup/app/b2/S3Config.kt`, `S3ClientFactory.kt`, `S3Uploader.kt`, `S3KeyBuilder.kt` | Task 06 |
-| `app/src/main/java/com/photobackup/app/ui/OnboardingActivity.kt` + `res/layout/activity_onboarding.xml` | Task 07 |
-| `app/src/main/java/com/photobackup/app/ui/GalleryActivity.kt`, `GalleryAdapter.kt` + `res/layout/activity_gallery.xml`, `item_gallery.xml` | Task 08 |
+| `app/src/main/java/com/hriyaan/photostorage/PhotoBackupApp.kt` | Task 01 (skeleton), Task 09 (singleton wiring) |
+| `app/src/main/java/com/hriyaan/photostorage/MainActivity.kt` | Task 09 |
+| `app/src/main/java/com/hriyaan/photostorage/data/UploadRecord.kt`, `UploadDao.kt`, `UploadDatabase.kt` | Task 02 |
+| `app/src/main/java/com/hriyaan/photostorage/data/PrefsStore.kt` | Task 03 |
+| `app/src/main/java/com/hriyaan/photostorage/data/MediaStoreQuery.kt`, `PhotoPermission.kt` | Task 04 |
+| `app/src/main/java/com/hriyaan/photostorage/thumbnail/ThumbnailGen.kt` | Task 05 |
+| `app/src/main/java/com/hriyaan/photostorage/b2/S3Config.kt`, `S3ClientFactory.kt`, `S3Uploader.kt`, `S3KeyBuilder.kt` | Task 06 |
+| `app/src/main/java/com/hriyaan/photostorage/ui/OnboardingActivity.kt` + `res/layout/activity_onboarding.xml` | Task 07 |
+| `app/src/main/java/com/hriyaan/photostorage/ui/GalleryActivity.kt`, `GalleryAdapter.kt` + `res/layout/activity_gallery.xml`, `item_gallery.xml` | Task 08 |
 
 Each task spec restates the files it owns.
 

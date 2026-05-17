@@ -8,21 +8,21 @@ Glue the components together and prove end-to-end the upload pipeline works agai
 
 ## Files you own (touch)
 
-- `app/src/main/java/com/photobackup/app/PhotoBackupApp.kt` (replace skeleton from Task 01)
-- `app/src/main/java/com/photobackup/app/MainActivity.kt` (replace placeholder from Task 01)
+- `app/src/main/java/com/hriyaan/photostorage/PhotoBackupApp.kt` (replace skeleton from Task 01)
+- `app/src/main/java/com/hriyaan/photostorage/MainActivity.kt` (replace placeholder from Task 01)
 - `app/src/main/AndroidManifest.xml` (verify launcher activity is `MainActivity`)
-- (Optional) `app/src/androidTest/java/com/photobackup/app/SmokeTest.kt`
+- (Optional) `app/src/androidTest/java/com/hriyaan/photostorage/SmokeTest.kt`
 
 You should **not** modify files owned by Tasks 02–08. If a wiring problem requires a contract change, raise it back to the owning task — don't patch around it here.
 
 ## `PhotoBackupApp`
 
 ```kotlin
-package com.photobackup.app
+package com.hriyaan.photostorage
 
 import android.app.Application
-import com.photobackup.app.data.PrefsStore
-import com.photobackup.app.data.UploadDatabase
+import com.hriyaan.photostorage.data.PrefsStore
+import com.hriyaan.photostorage.data.UploadDatabase
 
 class PhotoBackupApp : Application() {
     lateinit var prefsStore: PrefsStore
@@ -43,13 +43,13 @@ Singletons live for the process. Activities access them via `(application as Pho
 ## `MainActivity`
 
 ```kotlin
-package com.photobackup.app
+package com.hriyaan.photostorage
 
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.photobackup.app.ui.GalleryActivity
-import com.photobackup.app.ui.OnboardingActivity
+import com.hriyaan.photostorage.ui.GalleryActivity
+import com.hriyaan.photostorage.ui.OnboardingActivity
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

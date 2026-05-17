@@ -8,10 +8,10 @@ Provide a tiny SQLite layer for tracking uploaded photos. Single table, raw `SQL
 
 ## Files you own
 
-- `app/src/main/java/com/photobackup/app/data/UploadRecord.kt`
-- `app/src/main/java/com/photobackup/app/data/UploadDatabase.kt`
-- `app/src/main/java/com/photobackup/app/data/UploadDao.kt`
-- `app/src/test/java/com/photobackup/app/data/UploadDaoTest.kt` (Robolectric or pure JVM with in-memory SQLite — optional but recommended)
+- `app/src/main/java/com/hriyaan/photostorage/data/UploadRecord.kt`
+- `app/src/main/java/com/hriyaan/photostorage/data/UploadDatabase.kt`
+- `app/src/main/java/com/hriyaan/photostorage/data/UploadDao.kt`
+- `app/src/test/java/com/hriyaan/photostorage/data/UploadDaoTest.kt` (Robolectric or pure JVM with in-memory SQLite — optional but recommended)
 
 ## Schema
 
@@ -39,7 +39,7 @@ Status values are exactly: `pending`, `uploading`, `uploaded`, `failed`. Define 
 ## Public contract
 
 ```kotlin
-package com.photobackup.app.data
+package com.hriyaan.photostorage.data
 
 data class UploadRecord(
     val id: Long = 0L,

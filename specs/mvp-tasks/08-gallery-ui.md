@@ -8,9 +8,9 @@ Show a 3-column grid of local photos with upload status overlays. Tap to upload 
 
 ## Files you own
 
-- `app/src/main/java/com/photobackup/app/ui/GalleryActivity.kt` (overwrites the stub from Task 01)
-- `app/src/main/java/com/photobackup/app/ui/GalleryAdapter.kt`
-- `app/src/main/java/com/photobackup/app/ui/GalleryItem.kt` (data class — may colocate)
+- `app/src/main/java/com/hriyaan/photostorage/ui/GalleryActivity.kt` (overwrites the stub from Task 01)
+- `app/src/main/java/com/hriyaan/photostorage/ui/GalleryAdapter.kt`
+- `app/src/main/java/com/hriyaan/photostorage/ui/GalleryItem.kt` (data class — may colocate)
 - `app/src/main/res/layout/activity_gallery.xml`
 - `app/src/main/res/layout/item_gallery.xml`
 - `app/src/main/res/drawable/ic_cloud_uploaded.xml` (vector cloud-check icon)

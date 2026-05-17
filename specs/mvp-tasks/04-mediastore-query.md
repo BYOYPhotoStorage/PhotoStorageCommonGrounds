@@ -8,14 +8,14 @@ Read the device photo gallery via `MediaStore` and expose a list the gallery UI 
 
 ## Files you own
 
-- `app/src/main/java/com/photobackup/app/data/MediaStorePhoto.kt` (data class — file may colocate with the query class if you prefer one file)
-- `app/src/main/java/com/photobackup/app/data/MediaStoreQuery.kt`
-- `app/src/main/java/com/photobackup/app/data/PhotoPermission.kt`
+- `app/src/main/java/com/hriyaan/photostorage/data/MediaStorePhoto.kt` (data class — file may colocate with the query class if you prefer one file)
+- `app/src/main/java/com/hriyaan/photostorage/data/MediaStoreQuery.kt`
+- `app/src/main/java/com/hriyaan/photostorage/data/PhotoPermission.kt`
 
 ## Public contract
 
 ```kotlin
-package com.photobackup.app.data
+package com.hriyaan.photostorage.data
 
 data class MediaStorePhoto(
     val id: Long,

@@ -8,19 +8,19 @@ Wrap the AWS SDK for Kotlin so the app can authenticate to Backblaze B2 (S3-comp
 
 ## Files you own
 
-- `app/src/main/java/com/photobackup/app/b2/S3Config.kt`
-- `app/src/main/java/com/photobackup/app/b2/S3ClientFactory.kt`
-- `app/src/main/java/com/photobackup/app/b2/S3Uploader.kt`
-- `app/src/main/java/com/photobackup/app/b2/S3KeyBuilder.kt`
+- `app/src/main/java/com/hriyaan/photostorage/b2/S3Config.kt`
+- `app/src/main/java/com/hriyaan/photostorage/b2/S3ClientFactory.kt`
+- `app/src/main/java/com/hriyaan/photostorage/b2/S3Uploader.kt`
+- `app/src/main/java/com/hriyaan/photostorage/b2/S3KeyBuilder.kt`
 
 ## Public contract
 
 ```kotlin
-package com.photobackup.app.b2
+package com.hriyaan.photostorage.b2
 
 import aws.sdk.kotlin.services.s3.S3Client
 import aws.smithy.kotlin.runtime.content.ByteStream
-import com.photobackup.app.data.B2Credentials
+import com.hriyaan.photostorage.data.B2Credentials
 
 data class S3Config(
     val region: String,        // e.g. "us-west-004"

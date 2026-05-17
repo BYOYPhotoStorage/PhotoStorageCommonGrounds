@@ -8,13 +8,13 @@ Produce a small WebP thumbnail (~20–40 KB) for each photo before upload.
 
 ## Files you own
 
-- `app/src/main/java/com/photobackup/app/thumbnail/ThumbnailGen.kt`
-- (Optional) `app/src/androidTest/java/com/photobackup/app/thumbnail/ThumbnailGenTest.kt`
+- `app/src/main/java/com/hriyaan/photostorage/thumbnail/ThumbnailGen.kt`
+- (Optional) `app/src/androidTest/java/com/hriyaan/photostorage/thumbnail/ThumbnailGenTest.kt`
 
 ## Public contract
 
 ```kotlin
-package com.photobackup.app.thumbnail
+package com.hriyaan.photostorage.thumbnail
 
 class ThumbnailGen(private val context: Context) {
     /**
